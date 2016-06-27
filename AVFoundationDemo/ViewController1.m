@@ -44,6 +44,10 @@
     // Do any additional setup after loading the view from its nib.
 }
 
+-(void)viewWillDisappear:(BOOL)animated{
+    [speaker stop];
+    speaker = nil;
+}
 
 
 -(void)start{
