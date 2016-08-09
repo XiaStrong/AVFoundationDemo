@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1548DF8C1D2F42CD005A0669 /* ViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = 1548DF8A1D2F42CD005A0669 /* ViewController3.m */; };
+		1548DF8D1D2F42CD005A0669 /* ViewController3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1548DF8B1D2F42CD005A0669 /* ViewController3.xib */; };
+		1548DF8F1D2F4406005A0669 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1548DF8E1D2F4405005A0669 /* CoreText.framework */; };
+		1548DF911D2F440F005A0669 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1548DF901D2F440F005A0669 /* QuartzCore.framework */; };
+		1548DF931D2F4417005A0669 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1548DF921D2F4417005A0669 /* Accelerate.framework */; };
 		15C3EAB31D1CDD1B00BE88B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C3EAB21D1CDD1B00BE88B5 /* main.m */; };
 		15C3EAB61D1CDD1B00BE88B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C3EAB51D1CDD1B00BE88B5 /* AppDelegate.m */; };
 		15C3EAB91D1CDD1B00BE88B5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C3EAB81D1CDD1B00BE88B5 /* ViewController.m */; };
@@ -47,6 +52,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1548DF891D2F42CD005A0669 /* ViewController3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController3.h; sourceTree = "<group>"; };
+		1548DF8A1D2F42CD005A0669 /* ViewController3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController3.m; sourceTree = "<group>"; };
+		1548DF8B1D2F42CD005A0669 /* ViewController3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController3.xib; sourceTree = "<group>"; };
+		1548DF8E1D2F4405005A0669 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		1548DF901D2F440F005A0669 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1548DF921D2F4417005A0669 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		15C3EAAE1D1CDD1B00BE88B5 /* AVFoundationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVFoundationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15C3EAB21D1CDD1B00BE88B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		15C3EAB41D1CDD1B00BE88B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -88,6 +99,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1548DF931D2F4417005A0669 /* Accelerate.framework in Frameworks */,
+				1548DF911D2F440F005A0669 /* QuartzCore.framework in Frameworks */,
+				1548DF8F1D2F4406005A0669 /* CoreText.framework in Frameworks */,
 				15E6A22A1D1F9FAB00715BBF /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -109,9 +123,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1548DF881D2F418C005A0669 /* 视屏录制与播放 */ = {
+			isa = PBXGroup;
+			children = (
+				1548DF891D2F42CD005A0669 /* ViewController3.h */,
+				1548DF8A1D2F42CD005A0669 /* ViewController3.m */,
+				1548DF8B1D2F42CD005A0669 /* ViewController3.xib */,
+			);
+			name = "视屏录制与播放";
+			sourceTree = "<group>";
+		};
 		15C3EAA51D1CDD1B00BE88B5 = {
 			isa = PBXGroup;
 			children = (
+				1548DF921D2F4417005A0669 /* Accelerate.framework */,
+				1548DF901D2F440F005A0669 /* QuartzCore.framework */,
+				1548DF8E1D2F4405005A0669 /* CoreText.framework */,
 				15E6A2291D1F9FAA00715BBF /* CoreGraphics.framework */,
 				15C3EAB01D1CDD1B00BE88B5 /* AVFoundationDemo */,
 				15C3EACA1D1CDD1B00BE88B5 /* AVFoundationDemoTests */,
@@ -138,6 +165,7 @@
 				15C3EABA1D1CDD1B00BE88B5 /* Main.storyboard */,
 				15C3EAB71D1CDD1B00BE88B5 /* ViewController.h */,
 				15C3EAB81D1CDD1B00BE88B5 /* ViewController.m */,
+				1548DF881D2F418C005A0669 /* 视屏录制与播放 */,
 				15E6A20D1D1E474300715BBF /* 语音记录 */,
 				15E6A20C1D1E45E600715BBF /* 语音朗读 */,
 				15C3EABD1D1CDD1B00BE88B5 /* Assets.xcassets */,
@@ -308,6 +336,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1548DF8D1D2F42CD005A0669 /* ViewController3.xib in Resources */,
 				15C3EAE81D1CDF1400BE88B5 /* ViewController1.xib in Resources */,
 				15C3EAC11D1CDD1B00BE88B5 /* LaunchScreen.storyboard in Resources */,
 				15C3EABE1D1CDD1B00BE88B5 /* Assets.xcassets in Resources */,
@@ -344,6 +373,7 @@
 				15E6A2221D1E62FA00715BBF /* NSDate+XQDate.m in Sources */,
 				15E6A2361D1FD04600715BBF /* Record.m in Sources */,
 				15C3EAEB1D1D09D200BE88B5 /* XQSpeaker.m in Sources */,
+				1548DF8C1D2F42CD005A0669 /* ViewController3.m in Sources */,
 				15C3EAB91D1CDD1B00BE88B5 /* ViewController.m in Sources */,
 				15E6A23A1D1FD17200715BBF /* ViewController2.m in Sources */,
 				15C3EAB61D1CDD1B00BE88B5 /* AppDelegate.m in Sources */,

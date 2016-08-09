@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "ViewController1.h"
 #import "ViewController2.h"
+#import "ViewController3.h"
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     NSArray *dataArr;
@@ -23,7 +24,7 @@
     self.title=@"多媒体应用";
     
     self.automaticallyAdjustsScrollViewInsets =NO;
-    dataArr=@[@"语音朗读",@"语音记录"];
+    dataArr=@[@"语音朗读",@"语音记录",@"视屏录制与播放"];
     _myTab.delegate=self;
     _myTab.dataSource=self;
     
@@ -39,6 +40,11 @@
     if (indexPath.row ==1) {
         ViewController2 *vc2 =[[ViewController2 alloc]init];
         [self.navigationController pushViewController:vc2 animated:YES];
+    }
+    
+    if (indexPath.row ==2) {
+        ViewController3 *vc3 =[[ViewController3 alloc]init];
+        [self.navigationController pushViewController:vc3 animated:YES];
     }
     
 }
