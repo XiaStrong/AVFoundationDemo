@@ -24,6 +24,7 @@
     self.title=@"多媒体应用";
     
     self.automaticallyAdjustsScrollViewInsets =NO;
+    
     dataArr=@[@"语音朗读",@"语音记录",@"视屏录制与播放"];
     _myTab.delegate=self;
     _myTab.dataSource=self;

@@ -38,6 +38,7 @@
     self.navigationItem.rightBarButtonItems = @[item0,item1];
 
     if ([self videoRecordingAvailable]) {
+        
         item0.enabled=YES;
         item1.enabled=YES;
     }else{
